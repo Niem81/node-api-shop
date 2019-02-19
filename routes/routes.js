@@ -28,11 +28,11 @@ api.delete('/product/:productId', ProductCntrl.deleteDish);
 // rutas para pedidos
 const OrderCntrl = require('../controllers/order');
 
-api.get('/ingredient', OrderCntrl.getOrders);
-api.get('/ingredient/:ingredientId', OrderCntrl.getOrder);
-api.post('/ingredient', OrderCntrl.saveOrder);
-api.put('/ingredient/:ingredientId', OrderCntrl.updateOrder);
-api.delete('/ingredient/:ingredientId', OrderCntrl.deleteOrder);
+api.get('/order', OrderCntrl.getOrders);
+api.get('/order/:ingredientId', OrderCntrl.getOrder);
+api.post('/order', OrderCntrl.saveOrder);
+api.put('/order/:ingredientId', OrderCntrl.updateOrder);
+api.delete('/order/:ingredientId', OrderCntrl.deleteOrder);
 
 // rutas para autenticacion y registro de usuario
 const passport = require('../config/authenticate');
